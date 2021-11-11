@@ -1,9 +1,11 @@
-const MyComponent = props => {
-  return <div>안녕하세요, 제 이름은 {props.name}입니다.</div>;
+import MyComponent from './MyComponent';
+ 
+const App = () => {
+  return (
+    <MyComponent name="React" favoriteNumber={1}>
+      리액트
+    </MyComponent>
+  );
 };
  
-MyComponent.defaultProps = {
-  name: '기본 이름'
-};
- 
-export default MyComponent;
+export default App;
