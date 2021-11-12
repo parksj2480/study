@@ -20,3 +20,4 @@ export const updatePost = ({ id, title, body, tags }) =>
   });
   return client.get(`/api/posts?${queryString}`);
 };
+export const removePost = id => client.delete(`/api/posts/${id}`);
