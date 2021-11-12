@@ -11,3 +11,4 @@ const Menu = () => {
     </ul>
   );
 };
+export default Menu;
