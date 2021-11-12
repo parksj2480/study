@@ -1,7 +1,10 @@
+import { createStore } from 'redux';
+
 const divToggle = document.querySelector('.toggle');
 const counter = document.querySelector('h1');
 const btnIncrease = document.querySelector('#id');
 const btnDecrease = document.querySelector('#decrease');
+const store = createStore(reducer);
 
 const TOGGLE_SWITCH = 'TOGGLE_SWITCH';
 const INCREASE = 'INCREASE';
